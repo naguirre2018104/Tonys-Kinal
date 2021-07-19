@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.noelaguirre.controller.ProductoPlatoController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="123.0" style="-fx-background-color: #58FAF4;">
+         <children>
+            <ImageView fitHeight="77.0" fitWidth="75.0" layoutX="24.0" layoutY="311.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/Icono%20Tony's%20Kinal.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="27.0" layoutY="24.0" mnemonicParsing="false" onAction="#menuPrincipal" prefHeight="36.0" prefWidth="69.0" text="Menú" />
+         </children>
+      </Pane>
+      <Pane layoutX="117.0" prefHeight="400.0" prefWidth="489.0" style="-fx-background-color: #F7D358;">
+         <children>
+            <Label alignment="CENTER" layoutX="147.0" layoutY="34.0" prefHeight="36.0" prefWidth="197.0" text="Productos - Platos">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <GridPane layoutX="43.0" layoutY="70.0" prefHeight="70.0" prefWidth="404.0">
+               <children>
+                  <Label alignment="CENTER" prefHeight="28.0" prefWidth="197.0" text="Código Producto:">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="28.0" prefWidth="197.0" text="Código Plato:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="cmbCodigoProducto" prefHeight="25.0" prefWidth="208.0" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="cmbCodigoPlato" prefHeight="25.0" prefWidth="212.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <TableView fx:id="tblProductoPlato" layoutX="28.0" layoutY="155.0" onKeyReleased="#seleccionarElemento" onMouseClicked="#seleccionarElemento" prefHeight="179.0" prefWidth="434.0">
+              <columns>
+                <TableColumn fx:id="colCodigoProducto" prefWidth="212.0" text="Código Producto" />
+                <TableColumn fx:id="colCodigoPlato" prefWidth="221.0" text="Código Plato" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

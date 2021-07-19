@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.noelaguirre.controller.MenuPrincipalController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Fondo%20Tony's%20Kinal.png" />
+         </image></ImageView>
+      <MenuBar layoutY="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Módulos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#ventanaEmpresas" text="Empresas" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoEmpleado" text="Tipo Empleado" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductos" text="Productos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaTipoPlato" text="Tipo Plato" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Relaciones">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicioEmpleado" text="Servicios Empleados" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaServicioPlato" text="Servicios Platos" />
+                  <MenuItem mnemonicParsing="false" onAction="#ventanaProductoPlato" text="Productos Platos" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" onAction="#ventanaProgramador" text="About">
+            <items>
+              <MenuItem fx:id="miProgramador" mnemonicParsing="false" text="Programador" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

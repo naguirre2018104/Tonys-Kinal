@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.noelaguirre.controller.ProgramadorController">
+   <children>
+      <AnchorPane layoutX="-4.0" layoutY="-5.0" prefHeight="408.0" prefWidth="606.0" style="-fx-background-color: orange;">
+         <children>
+            <AnchorPane prefHeight="415.0" prefWidth="228.0" style="-fx-background-color: cyan;">
+               <children>
+                  <Button fx:id="btnRegresar" layoutX="60.0" layoutY="333.0" mnemonicParsing="false" onAction="#menuPrincipal" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: yellow;" text="Regresar">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <ImageView fitHeight="150.0" fitWidth="153.0" layoutX="397.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/IMG-20181208-WA0067.jpg" />
+               </image></ImageView>
+            <Label layoutX="317.0" layoutY="61.0" prefHeight="30.0" prefWidth="133.0" text="Tony's Kinal" textFill="#1d00ff">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="60.0" layoutY="127.0" prefHeight="30.0" prefWidth="133.0" text="Programador:" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="233.0" layoutY="127.0" prefHeight="30.0" prefWidth="295.0" text="Noel Alejandro Aguirre Padilla">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="186.0" prefHeight="30.0" prefWidth="133.0" text="Carné:" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="186.0" prefHeight="30.0" prefWidth="93.0" text="2018-104">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="244.0" prefHeight="30.0" prefWidth="153.0" text="Código Técnico:" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="238.0" layoutY="244.0" prefHeight="30.0" prefWidth="74.0" text="IN5AM">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="81.0" fitWidth="85.0" layoutX="60.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Icono%20Tony's%20Kinal.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
